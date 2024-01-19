@@ -1,8 +1,8 @@
-# leaflet-wms-header
+# leaflet-wms-header-opt
 Custom headers on Leaflet TileLayer WMS.
 It's a simple plugin that allow to set custom header for WMS interface.
 
-It works with javascript and typescript without any dependencies!
+It works with Javascript and Typescript without any dependencies!
 
 Based on https://github.com/Leaflet/Leaflet/issues/2091#issuecomment-302706529.
 
@@ -32,6 +32,7 @@ var wmsLayer = L.TileLayer.wmsHeader(
         { header: 'Authorization', value: 'JWT ' + MYAUTHTOKEN },
         { header: 'content-type', value: 'text/plain'},
     ],
+    null,
     null
 ).addTo(map);
 ```
@@ -55,8 +56,7 @@ let wmsLayer: L.TileLayer.WMSHeader = L.TileLayer.wmsHeader(
     }, [
         { header: 'Authorization', value: 'JWT ' + MYAUTHTOKEN },
         { header: 'content-type', value: 'text/plain'},
-    ],
-    null
+    ]
 ).addTo(map);
 ```
 
@@ -80,3 +80,7 @@ let tileLayer: L.TileLayer.WMSHeader = L.TileLayer.wmsHeader(
     this.abortWMSObservable$.pipe(take(1))
 );
 ```
+
+### Results parameter
+
+Undocumented...
