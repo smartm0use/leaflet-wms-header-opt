@@ -1,12 +1,12 @@
 {
-  "name": "leaflet-wms-header",
-  "version": "1.0.9",
+  "name": "leaflet-wms-header-opt",
+  "version": "1.0.14",
   "description": "Custom headers on Leaflet TileLayer WMS",
   "main": "index.js",
   "types": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ticinum-aerospace/leaflet-wms-header"
+    "url": "https://github.com/smartmouse/leaflet-wms-header-opt"
   },
   "keywords": [
     "leaflet",
@@ -19,11 +19,8 @@
   ],
   "author": "Ticinum Aerospace",
   "license": "ISC",
-  "peerDependencies": {
-    "leaflet": "^1.7.1"
-  },
   "dependencies": {
-    "rxjs": "^6.5.3",
-    "typescript": "^2.9.2"
+    "rxjs": "^7.8.1",
+    "typescript": "^4.9.5"
   }
 }

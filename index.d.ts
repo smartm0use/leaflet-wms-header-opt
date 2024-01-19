@@ -1,5 +1,5 @@
 import * as L from 'leaflet';
-import {Observable} from 'rxjs';
+import {Observable, Subject} from 'rxjs';
 
 declare module 'leaflet' {
   namespace TileLayer {
@@ -8,14 +8,16 @@ declare module 'leaflet' {
         baseUrl: string,
         options: WMSOptions,
         header: { header: string; value: string }[],
-        abort?: Observable<any>
+        abort?: Observable<any>,
+        results?: Observable<any>,
       );
     }
     export function wmsHeader(
       baseUrl: string,
       options: WMSOptions,
       header: { header: string; value: string }[],
-      abort?: Observable<any>
+      abort?: Observable<any>,
+      results?: Subject<any>,
     ): L.TileLayer.WMSHeader;
   }
 }
